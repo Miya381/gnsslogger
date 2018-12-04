@@ -24,6 +24,7 @@ import android.view.View;
 
 /** The activity for the application. */
 public class MainActivity extends AppCompatActivity {
+    //miyai shinya
     // あいうえおかきくけこさしすせそ
     //てすと
     private static final int LOCATION_REQUEST_ID = 1;
