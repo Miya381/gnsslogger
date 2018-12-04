@@ -41,7 +41,7 @@ public class FileLogger implements GnssListener {
 
     private static final int MAX_FILES_STORED = 100;
     private static final int MINIMUM_USABLE_FILE_SIZE_BYTES = 1000;
-//aaaaaaa
+//aaaaaaabbb
     private final Context mContext;
 
     private final Object mFileLock = new Object();
