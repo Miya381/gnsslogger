@@ -397,7 +397,6 @@ public class SensorContainer {
 
                 mLogger.onSensorRawListener(sensorRaw);
 
-
                 if(SettingsFragment.ResearchMode) {
                     mLogger.onSensorListener(String.format("Pitch = %f , Roll = %f , Azimuth = %f \n Altitude = %f \n WalkCounter = %d \n AccAzi = %d", Math.toDegrees(mPitchX), Math.toDegrees(mRollY), Math.toDegrees(mAzimuthZ), LastAltitude - Altitude, counter, AccAzi), Math.toDegrees(mAzimuthZ), currentAccelerationZValues, LastAltitude - Altitude);
                 }else{

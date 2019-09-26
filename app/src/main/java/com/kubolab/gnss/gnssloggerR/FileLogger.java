@@ -41,7 +41,7 @@ public class FileLogger implements GnssListener {
 
     private static final int MAX_FILES_STORED = 100;
     private static final int MINIMUM_USABLE_FILE_SIZE_BYTES = 1000;
-//aaaaaaabbb
+
     private final Context mContext;
 
     private final Object mFileLock = new Object();
@@ -368,7 +368,8 @@ public class FileLogger implements GnssListener {
                             currentFileWriter.newLine();
                         }
                     }
-                }//RINEX ver2.11
+                }
+                //RINEX ver2.11
                 else {
                     //RINEX Version Type
                     currentFileWriter.write("     2.11           OBSERVATION DATA    G (GPS)             RINEX VERSION / TYPE");
@@ -439,7 +440,8 @@ public class FileLogger implements GnssListener {
                 }
                 firsttime = true;
                 localintervaltime = SettingsFragment.interval;
-            } catch (IOException e) {
+            }
+            catch (IOException e) {
                 Toast.makeText(mContext, "Count not initialize observation file", Toast.LENGTH_SHORT).show();
                 logException("Count not initialize file: " + currentFilePath, e);
                 return;
