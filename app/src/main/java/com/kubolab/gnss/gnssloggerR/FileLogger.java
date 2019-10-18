@@ -27,6 +27,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.ArrayList;
 
+//確認 Surface
 public class FileLogger implements GnssListener {
 
     private static final String TAG = "FileLogger";
